@@ -24,5 +24,7 @@ This is a password generator using JavaScript code to create a password that mee
 
 Follow [Link](https://z20axa.github.io/Professional-Portfolio/)
 
+## Credits
 
+HTML and CSS files provided by UPENN BootCamp Course
 

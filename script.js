@@ -1,13 +1,13 @@
-// Assignment code here
-let password = "";
-
+// Declaring global variables
+var password = "";
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowercase = "abcdefghijklmnopqrstuvwxyz"
 var numbers = "0123456789";
 var symbols = "!@#$%^&*_-+=";
 
+// Function to generate the password based on the user input password length and criterias 
 var fillPassword = function (passwordlength, characters) {
-  for (let i = 0; i < passwordlength; i++) {
+  for (i = 0; i < passwordlength; i++) {
     password += characters.charAt(
       Math.floor(Math.random() * characters.length)
     );
@@ -15,15 +15,17 @@ var fillPassword = function (passwordlength, characters) {
   return password;
 };
 
+// Function to randomly select the characters to create the password based on the user input password length and criterias
 var generatePassword = function ()  {
-    let characters = "";
+    //Declaring local variable 
+    var characters = "";
 
     // User prompt for password length (8-128 characters)
     var passwordlength = parseInt(prompt("Please choose the password length between 8-128 characters"))
     console.log (passwordlength)
-
+    // Confirm the password lengh based on criteria
     if( 8 > passwordlength || 128 < passwordlength){
-        alert('incorrect details entered')
+        alert('Incorrect password length details entered')
         return;
     }
 
@@ -43,11 +45,13 @@ var generatePassword = function ()  {
     var includespecialcharacter = confirm("Would you like your password to include special characters?")
     console.log(includespecialcharacter)
 
+    // Alert if user doesn't select any of the character criterias
     if(!(includelowercase || includeuppercase || includenumeric || includespecialcharacter)){
-        alert("You need to select atleast one option")
+        alert("You need to select at least one criteria option")
         return;
     }
 
+    // Randomly select lowercase characters if user selected password to include lowercase characters
     if(includelowercase){
         password += lowercase.charAt(
         Math.floor(Math.random() * characters.length)
@@ -55,6 +59,7 @@ var generatePassword = function ()  {
         characters += lowercase
     }
 
+    // Randomly select uppercase characters if user selected password to include uppercase characters
     if(includeuppercase){
         password += uppercase.charAt(
         Math.floor(Math.random() * characters.length)
@@ -62,6 +67,7 @@ var generatePassword = function ()  {
         characters += uppercase;
     }
 
+    // Randomly select numeric characters if user selected password to include numeric characters
     if(includenumeric){
         password += numbers.charAt(
         Math.floor(Math.random() * characters.length)
@@ -69,6 +75,7 @@ var generatePassword = function ()  {
         characters += numbers;
     }
 
+    // Randomly select special characters if user selected password to include special characters
     if(includespecialcharacter){
         password += symbols.charAt(
         Math.floor(Math.random() * characters.length)
@@ -76,7 +83,8 @@ var generatePassword = function ()  {
         characters += symbols;
     }
 
-    let updatedPassword = fillPassword(passwordlength - password.length, characters);
+    // Fill password with characters randomly selected per use input criterias selected
+    updatedPassword = fillPassword(passwordlength - password.length, characters);
     return updatedPassword;
 };
 
@@ -90,7 +98,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button

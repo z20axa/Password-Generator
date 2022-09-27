@@ -1,26 +1,28 @@
 # Password-Generator
 Password Generator
 
-## User Story
+## Description
 
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
+This is a password geneator using JavaScript code to create a password that meets certain criteria from the user input for a strong password for greater security 
 
-## Acceptance Criteria
+## Usage 
 
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+- User click the "Generate Password" button
+- Then user is prompted to choose a length of at least 8 characters and no more than 128 characters for the password to be generated
+- Then user is prompted to confirm if password should contain/include lowercase letters
+- Then user is prompted to confirm if password should contain/include uppercase letters
+- Then user is prompted to confirm if password should contain/include number characters
+- Then user is prompted to confirm if password should contain/include special characters
+- After all prompts are confirmed, a password is generated that matches the user selected criterias
+- New generated password is displayed/written in the page
+
+## Deployed Website ScreenShot
+
+![WebSite SreenShot](Password_Geneator_WebSite_ScreenShot.jpeg "WebSite ScreenShot")
+
+## Website Link
+
+Follow [Link](https://z20axa.github.io/Professional-Portfolio/)
+
+
+

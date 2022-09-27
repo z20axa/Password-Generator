@@ -3,7 +3,7 @@ Password Generator
 
 ## Description
 
-This is a password geneator using JavaScript code to create a password that meets certain criteria from the user input for a strong password for greater security 
+This is a password generator using JavaScript code to create a password that meets certain criteria from the user input for a strong password for greater security 
 
 ## Usage 
 

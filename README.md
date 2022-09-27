@@ -3,7 +3,7 @@ Password Generator
 
 ## Description
 
-This is a password generator using JavaScript code to create a password that meets certain criteria from the user input for a strong password for greater security 
+This is a password generator website using JavaScript code to create a password that meets certain criteria from the user input for a strong password for greater security 
 
 ## Usage 
 
@@ -14,7 +14,7 @@ This is a password generator using JavaScript code to create a password that mee
 - Then user is prompted to confirm if password should contain/include number characters
 - Then user is prompted to confirm if password should contain/include special characters
 - After all prompts are confirmed, a password is generated that matches the user selected criterias
-- New generated password is displayed/written in the page
+- New generated password is displayed/written in the website
 
 ## Deployed Website ScreenShot
 
@@ -22,7 +22,7 @@ This is a password generator using JavaScript code to create a password that mee
 
 ## Website Link
 
-Follow [Link](https://z20axa.github.io/Professional-Portfolio/)
+Follow [Link](https://z20axa.github.io/Password-Generator/)
 
 ## Credits
 
